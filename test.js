@@ -4,7 +4,7 @@ const fs = require('fs');
 
 // WhatsApp Web oturumu için client oluşturun ve kimlik doğrulama ayarlarını yapın
 const client = new Client({
-  authStrategy: new LocalAuth(),
+  authStrategy: new NoAuth(),
   puppeteer: {
     args: ['--no-sandbox'],
   },
