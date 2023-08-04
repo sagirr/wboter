@@ -33,8 +33,7 @@
     "start": "node test.js",
     "wpbot": "node index.js",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "heroku-postbuild": "mkdir ./.cache && mv /app/.cache/puppeteer ./.cache"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
