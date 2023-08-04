@@ -3,12 +3,7 @@ const qrcode = require('qrcode-terminal');
 const fs = require('fs');
 
 // WhatsApp Web oturumu için client oluşturun ve kimlik doğrulama ayarlarını yapın
-const client = new Client({
-  authStrategy: new LocalAuth(),
-  puppeteer: {
-    args: ['--no-sandbox'],
-  },
-});
+const client = new Client();
 
 // QR kodunu tarayarak oturum açın
 client.on('qr', (qr) => {
